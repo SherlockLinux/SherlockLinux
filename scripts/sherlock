@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/Sherlock
+source /home/sherlock/Programs/Sherlock/Sherlock-venv/bin/activate
+/home/sherlock/Programs/Sherlock/Sherlock-venv/bin/python3 /home/sherlock/Programs/Sherlock/sherlock/sherlock.py "$@"

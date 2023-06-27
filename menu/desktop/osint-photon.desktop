@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Photon
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "photon -h"
+Icon=/home/sherlock/iconos/osint-photon.png
+Terminal=true

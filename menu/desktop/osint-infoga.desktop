@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Infoga
+Categories=X-BOtros;
+Exec=/usr/share/sherlock-menu/exec-in-shell "infoga -h"
+Icon=/home/sherlock/iconos/osint-infoga.png
+Terminal=true

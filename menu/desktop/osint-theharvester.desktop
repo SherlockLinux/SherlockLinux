@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=TheHarvester
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "theHarvester -h"
+Icon=/home/sherlock/iconos/osint-theharvester.png
+Terminal=true

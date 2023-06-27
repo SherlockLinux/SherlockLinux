@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd /home/sherlock/Programs/theHarvester
+source /home/sherlock/Programs/theHarvester/theHarvester-venv/bin/activate
+/home/sherlock/Programs/theHarvester/theHarvester-venv/bin/python3 theHarvester.py "$@"
+

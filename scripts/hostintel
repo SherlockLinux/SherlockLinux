@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/Hostintel
+source /home/sherlock/Programs/Hostintel/Hostintel-venv/bin/activate
+/home/sherlock/Programs/Hostintel/Hostintel-venv/bin/python3 /home/sherlock/Programs/Hostintel/hostintel.py "$@"

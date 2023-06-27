@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Metagoofil
+Categories=X-Varios;
+Exec=/usr/share/sherlock-menu/exec-in-shell "metagoofil -h"
+Icon=/home/sherlock/iconos/osint-sherlocklinux.png
+Terminal=true

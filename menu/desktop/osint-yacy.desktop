@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Yacy
+Categories=X-Varios;
+Exec=/usr/share/sherlock-menu/exec-in-shell "startYACY"
+Icon=/home/sherlock/iconos/osint-yacy.png
+Terminal=true

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Cloud Fail
+Categories=X-DNS;
+Exec=/usr/share/sherlock-menu/exec-in-shell "cloudfail -h"
+Icon=/home/sherlock/iconos/osint-cloudfail.png
+Terminal=true

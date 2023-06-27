@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/bbot
+source /home/sherlock/Programs/bbot/bbot-venv/bin/activate
+bbot "$@"

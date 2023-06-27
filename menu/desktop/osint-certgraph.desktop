@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=CertGraph
+Categories=X-BOtros;
+Exec=/usr/share/sherlock-menu/exec-in-shell "certgraph"
+Icon=/home/sherlock/iconos/osint-certgraph.png
+Terminal=true

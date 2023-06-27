@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=WhatWeb
+Categories=X-Varios;
+Exec=/usr/share/sherlock-menu/exec-in-shell "whatweb"
+Icon=/home/sherlock/iconos/osint-whatweb.png
+Terminal=true

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Spiderfoot GUI
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "sf -h"
+Icon=/home/sherlock/iconos/osint-spiderfoot.png
+Terminal=true

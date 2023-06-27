@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Scanless
+Categories=X-NMapper;
+Exec=/usr/share/sherlock-menu/exec-in-shell "scanless -h"
+Icon=/home/sherlock/iconos/osint-sherlocklinux.png
+Terminal=true

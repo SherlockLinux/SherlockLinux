@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/Photon
+source /home/sherlock/Programs/Photon/Photon-venv/bin/activate
+/home/sherlock/Programs/Photon/Photon-venv/bin/python3 /home/sherlock/Programs/Photon/photon.py "$@"

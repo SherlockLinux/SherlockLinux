@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Instaloader
+Categories=X-BUsuarios;
+Exec=/usr/share/sherlock-menu/exec-in-shell "instaloader"
+Icon=/home/sherlock/iconos/osint-sherlocklinux.png
+Terminal=true

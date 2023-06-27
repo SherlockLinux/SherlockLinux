@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/protosint
+source /home/sherlock/Programs/protosint/protosint-venv/bin/activate
+/home/sherlock/Programs/protosint/protosint-venv/bin/python3 /home/sherlock/Programs/protosint/protosint.py

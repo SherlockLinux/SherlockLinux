@@ -1,0 +1,123 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+    <Name>Xfce</Name>
+
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+
+    <Include>
+        <Category>X-Xfce-Toplevel</Category>
+    </Include>
+
+    <Layout>
+        <Filename>xfce4-terminal-emulator.desktop</Filename>
+        <Separator/>
+        <Merge type="all"/>
+    </Layout>
+
+    <Menu>
+        <Name>01. Navegadores</Name>
+        <Directory>xfce-Browsers.directory</Directory>
+        <Include>
+            <And>
+                <Category>X-Browsers</Category>
+            </And>
+        </Include>
+    </Menu>
+    <!-- End Browsers -->
+
+    <Menu>
+        <Name>02. Búsqueda de usuarios</Name>
+        <Directory>xfce-BUsuarios.directory</Directory>
+        <Include>
+            <And>
+                <Category>X-BUsuarios</Category>
+            </And>
+        </Include>
+    </Menu>
+    <!-- End Browsers -->
+
+    <Menu>
+      <Name>03. Búsqueda de emails, dorks, ...</Name>
+      <Directory>xfce-BOtros.directory</Directory>
+      <Include>
+        <And>
+          <Category>X-BOtros</Category>
+        </And>
+      </Include>
+    </Menu> <!-- End Búsqueda Otros -->
+
+    <Menu>
+      <Name>04. Frameworks OSINT</Name>
+      <Directory>xfce-FOsint.directory</Directory>
+      <Include>
+        <And>
+          <Category>X-FOsint</Category>
+        </And>
+      </Include>
+    </Menu> <!-- End Frameworks OSINT -->
+
+    <Menu>
+      <Name>05. DNS</Name>
+      <Directory>xfce-DNS.directory</Directory>
+      <Include>
+        <And>
+          <Category>X-DNS</Category>
+        </And>
+      </Include>
+    </Menu> <!-- End DNS -->
+
+    <Menu>
+      <Name>06. Network Mapper</Name>
+      <Directory>xfce-NMapper.directory</Directory>
+      <Include>
+        <And>
+          <Category>X-NMapper</Category>
+        </And>
+      </Include>
+    </Menu> <!-- End Network Mapper -->
+
+    <Menu>
+      <Name>07. Seguridad</Name>
+      <Directory>xfce-Seguridad.directory</Directory>
+      <Include> 
+        <And>
+          <Category>X-Seguridad</Category>
+        </And>
+      </Include>
+    </Menu> <!-- End Seguridad -->
+
+     <Menu>
+      <Name>08. Varios</Name>
+      <Directory>xfce-Varios.directory</Directory>
+      <Include>
+        <And>
+          <Category>X-Varios</Category>
+        </And>
+      </Include>
+    </Menu> <!-- End Varios -->
+
+    <Menu>
+        <Name>Settings</Name>
+        <Directory>xfce-settings.directory</Directory>
+        <Include>
+            <Category>Settings</Category>
+        </Include>
+
+        <Layout>
+            <Filename>xfce-settings-manager.desktop</Filename>
+            <Separator/>
+            <Merge type="all"/>
+        </Layout>
+    </Menu>
+    <Menu>
+        <Name>Other</Name>
+        <Directory>xfce-other.directory</Directory>
+        <OnlyUnallocated/>
+        <Include>
+            <All/>
+        </Include>
+    </Menu>
+</Menu>

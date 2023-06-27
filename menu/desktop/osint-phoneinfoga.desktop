@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Phone Infoga
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "phoneinfoga -h"
+Icon=/home/sherlock/iconos/osint-phoneinfoga.png
+Terminal=true

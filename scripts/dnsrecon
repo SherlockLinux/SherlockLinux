@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/DNSRecon
+source /home/sherlock/Programs/DNSRecon/DNSRecon-venv/bin/activate
+sudo /home/sherlock/Programs/DNSRecon/DNSRecon-venv/bin/python3 /home/sherlock/Programs/DNSRecon/dnsrecon.py "$@"

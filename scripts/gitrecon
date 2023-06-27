@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/gitrecon
+source /home/sherlock/Programs/gitrecon/gitrecon-venv/bin/activate
+/home/sherlock/Programs/gitrecon/gitrecon-venv/bin/python /home/sherlock/Programs/gitrecon/gitrecon.py "$@" 

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/metagoofil
+source /home/sherlock/Programs/metagoofil/metagoofil-venv/bin/activate
+/home/sherlock/Programs/metagoofil/metagoofil-venv/bin/python3 /home/sherlock/Programs/metagoofil/metagoofil.py "$@"

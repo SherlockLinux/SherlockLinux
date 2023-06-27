@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/spiderfoot/spiderfoot-4.0/
+source /home/sherlock/Programs/spiderfoot/spiderfoot-venv/bin/activate
+/home/sherlock/Programs/spiderfoot/spiderfoot-venv/bin/python3 ./sfcli.py

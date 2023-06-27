@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=4.4.1
+Type=Application
+Name=Maltego
+GenericName=Maltego
+Comment=Visualise, Map and Mine Data
+Exec=/usr/bin/maltego
+Icon=maltego
+Categories=X-FOsint;
+Terminal=false
+
+Actions=ConfigureJava;ShowWebsite;
+
+[Desktop Action ConfigureJava]
+Name=Configure Java
+Exec=/usr/bin/maltego_java_config
+
+[Desktop Action ShowWebsite]
+Name=Paterva Website
+Exec=x-www-browser https://www.paterva.com

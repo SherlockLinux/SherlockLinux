@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Pagodo
+Categories=X-BOtros;
+Exec=/usr/share/sherlock-menu/exec-in-shell "pagodo -h"
+Icon=/home/sherlock/iconos/osint-sherlocklinux.png
+Terminal=true

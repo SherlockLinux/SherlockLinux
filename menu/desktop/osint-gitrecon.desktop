@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Git Recon
+Categories=X-BUsuarios;
+Exec=/usr/share/sherlock-menu/exec-in-shell "gitrecon -h"
+Icon=/home/sherlock/iconos/osint-sherlocklinux.png
+Terminal=true

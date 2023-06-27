@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/eyewitness
+source /home/sherlock/Programs/eyewitness/eyewitness-venv/bin/activate
+/home/sherlock/Programs/eyewitness/Python/EyeWitness.py "$@"

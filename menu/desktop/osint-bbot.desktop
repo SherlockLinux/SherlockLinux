@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Bbot
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "bbot -h"
+Icon=/home/sherlock/iconos/osint-bbot.png
+Terminal=true

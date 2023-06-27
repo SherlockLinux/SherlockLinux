@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Eo ripper
+Categories=X-BUsuarios;
+Exec=/usr/share/sherlock-menu/exec-in-shell "eo-ripper"
+Icon=/home/sherlock/iconos/osint-sherlocklinux.png
+Terminal=true

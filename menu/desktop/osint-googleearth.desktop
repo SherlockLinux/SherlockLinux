@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Google Earth PRO
+Categories=X-Varios;
+Exec=/usr/bin/google-earth-pro
+Icon=google-earth-pro
+Terminal=false
