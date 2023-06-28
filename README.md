@@ -1,5 +1,6 @@
-![imagen](https://github.com/SherlockLinux/SherlockLinux/assets/137631572/4df7594c-ee86-4471-86bf-af37960eb2db)
+![LogoREADME](https://github.com/SherlockLinux/SherlockLinux/assets/137631572/06261dae-d3d1-4748-9b50-c7f8d07e6338)
 
+[![Python Version](https://img.shields.io/badge/python-3.9+-FF8400)](https://www.python.org) [![License](https://img.shields.io/badge/license-GPLv3-FF8400.svg)](https://github.com/blacklanternsecurity/bbot/blob/dev/LICENSE)
 
 # Sherlock Linux 
 ### https://www.sherlock-linux.org/
@@ -49,10 +50,9 @@ cd ~/SherlockLinux/
 
 #### Comienza la instalación...
 
-<img width="826" alt="imagen" src="https://github.com/SherlockLinux/SherlockLinux/assets/137631572/6d00a007-9467-4430-aa89-6432b6b1f867">
+<img width="600" alt="Sherlock linux install" src="https://github.com/SherlockLinux/SherlockLinux/assets/137631572/e69db155-e71f-47a8-b2c4-9a481900174d">
 
-
-### HERRAMIENTAS INSTALADAS
+# HERRAMIENTAS INSTALADAS
 
 - Git Recon
 - EO Ripper
@@ -87,14 +87,20 @@ cd ~/SherlockLinux/
 Puedes ver [aquí](https://www.sherlock-linux.org/documentacion/) la lista completa de herramientas.
 
 
-### ESCRITORIO
+# ESCRITORIO
 
-![imagen](https://github.com/SherlockLinux/SherlockLinux/assets/137631572/87d7be64-17e5-478b-a534-a9afc733b7b2)
+![sherlockPortatil](https://github.com/SherlockLinux/SherlockLinux/assets/137631572/68b55045-c4b7-4bdf-8984-cf3e142d284e)
+
 
 ### YOUTUBE
 https://www.youtube.com/channel/UC_GgVLZ29kDagSmAqJ74EEQ
 
-
-*EL SCRIPT DE INSTALACIÓN REALIZA CAMBIOS A NIVEL DE SO QUE PUEDEN DAÑAR EL SISTEMA OPERATIVO, EJECUTA EL SCRIPT EN UN ENTORNO CONTROLADO Y BAJO TU PROPIO RIESGO.
-
+### CONTACTO
 📫 [Contacto](https://www.sherlock-linux.org/contacto/)
+
+# DISCLAIMER
+
+- EL SCRIPT DE INSTALACIÓN REALIZA CAMBIOS A NIVEL DE SO QUE PUEDEN DAÑAR EL SISTEMA OPERATIVO, EJECUTA EL SCRIPT EN UN ENTORNO CONTROLADO Y BAJO TU PROPIO RIESGO.
+- ESTE SOFTWARE SE DISTRIBUYE GRATUITAMENTE BAJO LICENCIA GPL-3 Y NO GARANTIZA SU FUNCIONAMIENTO EN DIFERENTES VERSIONES DE LINUX.
+
+
