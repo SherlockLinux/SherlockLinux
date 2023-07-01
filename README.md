@@ -92,10 +92,10 @@ Puedes ver [aquí](https://www.sherlock-linux.org/documentacion/) la lista compl
 ![sherlockPortatil](https://github.com/SherlockLinux/SherlockLinux/assets/137631572/68b55045-c4b7-4bdf-8984-cf3e142d284e)
 
 
-### YOUTUBE
+# YOUTUBE
 https://www.youtube.com/channel/UC_GgVLZ29kDagSmAqJ74EEQ
 
-### CONTACTO
+# CONTACTO
 📫 [Contacto](https://www.sherlock-linux.org/contacto/)
 
 # DISCLAIMER
