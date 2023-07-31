@@ -93,7 +93,8 @@ Puedes ver [aquí](https://www.sherlock-linux.org/documentacion/) la lista compl
 
 
 # YOUTUBE
-https://www.youtube.com/channel/UC_GgVLZ29kDagSmAqJ74EEQ
+[Vídeo de presentación](https://youtu.be/iRYdHMKkxa4)
+
 
 # CONTACTO
 📫 [Contacto](https://www.sherlock-linux.org/contacto/)
