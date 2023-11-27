@@ -54,34 +54,41 @@ cd ~/SherlockLinux/
 
 # HERRAMIENTAS INSTALADAS
 
-- Git Recon
-- EO Ripper
-- Instaloader
-- Protosint
-- Sherlock
-- Certgraph
-- Infoga
-- Pagodo
 - Bbot
-- Phone infoga
-- Photon
-- Spiderfoot
-- Spiderfoot
-- OSRFramework
-- TheHarvester
+- Certgraph
 - Cloud Fail
 - Cloud Scraper
 - DNS Recon
-- XRay
-- Scanless
-- Hostintel
+- EO Ripper
 - ExifTool
 - EyeWitness
-- Metagoofil 
-- WhatWeb
-- Maltego
-- Yacy
+- Git Recon
+- Hostintel
 - HTTrack
+- Infoga
+- Instaloader
+- Maltego
+- Metagoofil
+- OSRFramework
+ -  Alias_generator
+ -  Checkfy
+ -  Domainfy
+ -  Mailfy
+ -  Phonefy
+ -  Searchfy
+ -  Usufy
+- Pagodo
+- Phone infoga
+- Photon
+- Protosint
+- Scanless
+- Sherlock
+- Spiderfoot CLI
+- Spiderfoot GUI
+- TheHarvester
+- WhatWeb
+- XRay
+- Yacy
 - ...
 
 Puedes ver [aquí](https://www.sherlock-linux.org/documentacion/) la lista completa de herramientas.
