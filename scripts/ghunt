@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/home/sherlock/.local/bin/ghunt "$@"

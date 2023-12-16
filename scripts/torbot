@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/torbot
+source /home/sherlock/Programs/torbot/torbot-venv/bin/activate
+/home/sherlock/Programs/torbot/torbot-venv/bin/python3 torbot "$@"

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 cd /home/sherlock/Programs/infoga
 source /home/sherlock/Programs/infoga/infoga-venv/bin/activate
-/home/sherlock/Programs/infoga/infoga-venv/bin/python3 /home/sherlock/Programs/infoga/infoga.py "$@"
+/home/sherlock/Programs/infoga/infoga-venv/bin/python2.7 /home/sherlock/Programs/infoga/infoga.py "$@"

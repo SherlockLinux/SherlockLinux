@@ -100,8 +100,12 @@ sudo update-grub
 
 
 sudo cp $SCRIPT_DIR/imagenes/desktop-background.png /usr/share/images/desktop-base/default
-sudo cp /home/sherlock/sherlocklinux/imagenes/login-background.svg /usr/share/images/desktop-base/login-background.svg
+sudo cp $SCRIPT_DIR/imagenes/login-background.svg /usr/share/images/desktop-base/login-background.svg
 
+
+sudo mv /usr/share/images/desktop-base/desktop-lockscreen.xml /usr/share/images/desktop-base/desktop-lockscreenBACKUP.xml
+sudo cp $SCRIPT_DIR/imagenes/desktop-lockscreen.xml /usr/share/images/desktop-base/desktop-lockscreen.xml
+sudo ln -s /usr/share/images/desktop-base/login-background.svg /usr/share/desktop-base/emerald-theme/login/background.svg	
 
 sudo apt install -y lightdm-gtk-greeter-settings
 sudo mv /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.confBACKUP
@@ -109,12 +113,15 @@ sudo cp $SCRIPT_DIR/other/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-gree
 sudo cp $SCRIPT_DIR/imagenes/sherlock.png /usr/share/images/desktop-base/sherlock.png
 default-user-image = /usr/share/images/desktop-base/sherlock.png
 
+xset b off
 
 echo -e "$VERDE Estilos aplicados! $RC"
 echo -e "$RC"
 
 echo -e "$AZUL3 Instalando Firefox..."
 sudo apt install -y firefox-esr
+firefox-esr
+
 echo -e "$VERDE Firefox Instalado $RC"
 
 echo -e "$AZUL3 Instalando Google Chome..."
@@ -133,9 +140,9 @@ echo -e "$RC"
 echo -e "$AZUL3 Instalando Tor..."
 echo -e "$COLOROFF"
 cd ~/Programs
-wget -c https://www.torproject.org/dist/torbrowser/12.5/tor-browser-linux64-12.5_ALL.tar.xz
-tar -xvf tor-browser-linux64-*.tar.xz
-rm -R ~/Programs/tor-browser-linux64-*.tar.xz
+wget -c https://www.torproject.org/dist/torbrowser/13.0.6/tor-browser-linux-x86_64-13.0.6.tar.xz
+tar -xvf tor-browser-linux-x86*.tar.xz
+rm -R ~/Programs/tor-browser-linux-x86*.tar.xz
 cd ~/Programs/tor-browser
 ./start-tor-browser.desktop --register-app
 echo -e "$VERDE Tor instalado $RC"
@@ -144,7 +151,6 @@ echo -e "$RC"
 
 echo -e "$VERDE Navegadores instalados! $RC"
 echo -e "$RC"
-
 
 echo -e "$AZUL3 Configurando Mozilla Firefox... $RC"
 export DISPLAY=:0
@@ -219,8 +225,13 @@ echo -e "$AZUL3 Instalando Phoneinfoga... $RC"
 mkdir ~/Programs/phoneinfoga
 cd ~/Programs/phoneinfoga
 bash <( curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install )
-sudo install ./phoneinfoga /usr/local/bin/phoneinfoga
+sudo mv ./phoneinfoga /usr/local/bin/phoneinfoga
 echo -e "$VERDE Phoneinfoga instalado $RC"
+
+
+echo -e "$AZUL3 Instalando GoBuster... $RC"
+sudo apt install gobuster
+echo -e "$VERDE GoBuster instalado $RC"
 
 
 echo -e "$AZUL3 Instalando WhatWeb.. $RC"
@@ -252,6 +263,20 @@ sudo apt -y install vlc
 echo -e "$VERDE VLC instalado $RC"
 
 
+#REQUIERE CONFIGURACIÓN MANUAL
+echo -e "$AZUL3 Instalando Mr.Holmes... $RC"
+git clone https://github.com/Lucksi/Mr.Holmes  ~/Programs/MrHolmes/
+cd  ~/Programs/MrHolmes
+python3 -m venv ~/Programs/MrHolmes/MrHolmes-venv
+source MrHolmes-venv/bin/activate
+sudo chmod +x install.sh
+sudo bash install.sh
+pip3 install -r requirements.txt
+deactivate
+echo -e "$VERDE Mr.Holmes instalado $RC"
+echo -e "$RC"
+
+
 echo -e "$AZUL3 Instalando Spiderfoot... $RC"
 mkdir ~/Programs/spiderfoot
 cd  ~/Programs/spiderfoot
@@ -261,8 +286,13 @@ rm v4.0.tar.gz
 python3 -m venv ~/Programs/spiderfoot/spiderfoot-venv
 source spiderfoot-venv/bin/activate
 cd spiderfoot-4.0
+#Solve problem with Cython 3.0.0
+echo "Cython<3" > cython_constraint.txt
+PIP_CONSTRAINT=cython_constraint.txt pip install "ai-core-sdk[aicore-content]"
 pip3 install -r requirements.txt
 deactivate
+echo -e "$VERDE Spiderfoot instalado $RC"
+echo -e "$RC"
 
 
 echo -e "$AZUL3 Instalando Bbot... $RC"
@@ -367,11 +397,23 @@ echo -e "$VERDE Hostintel instalado $RC"
 
 
 echo -e "$AZUL3 Instalando Infoga... $RC"
-git clone https://github.com/m4ll0k/Infoga.git  ~/Programs/infoga/
+git clone https://github.com/The404Hacking/Infoga.git  ~/Programs/infoga/
 cd  ~/Programs/infoga/
-python3 -m venv infoga-venv
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+echo "export PYENV_ROOT=\"$HOME/.pyenv\"" >> -a .bashrc 
+echo "export PATH=\"$PYENV_ROOT/bin:$PATH\"" >> -a .bashrc 
+echo "if command -v pyenv 1>/dev/null 2>&1; then" >> -a .bashrc 
+echo "	eval \"$(pyenv init --path)\"" >> -a .bashrc 
+echo "fi" >> -a .bashrc 
+echo "eval \"$(pyenv virtualenv-init -)\"" >> -a .bashrc 
+pyenv install 2.7.18
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+pyenv global 2.7.18
+pip2 install virtualenv
+python2 -m virtualenv infoga-venv
 source infoga-venv/bin/activate
-pip install -r requirements.txt
+pip2 install requests
 deactivate
 echo -e "$VERDE Infoga instalado $RC"
  
@@ -453,11 +495,48 @@ deactivate
 echo -e "$VERDE Instaloader instalado $RC"
 
 
+echo -e "$AZUL3 Instalando GHunt... $RC"
+git clone https://github.com/mxrch/ghunt ~/Programs/GHunt
+cd  ~/Programs/GHunt
+python3 -m venv ~/Programs/GHunt/GHunt-venv
+source GHunt-venv/bin/activate
+pip3 install pipx
+pipx ensurepath
+pipx install ghunt
+deactivate
+echo -e "$VERDE GHunt instalado $RC"
+echo -e "$RC" 
+
+
+echo -e "$AZUL3 Instalando Ivre... $RC"
+mkdir  ~/Programs/Ivre/
+cd ~/Programs/Ivre/
+python3 -m venv ~/Programs/Ivre/Ivre-venv
+source Ivre-venv/bin/activate
+pip install ivre
+deactivate
+echo -e "$VERDE Ivre instalado $RC"
+echo -e "$RC"
+
+
+echo -e "$AZUL3 Instalando TorBot... $RC"
+git clone https://github.com/DedSecInside/TorBot.git  ~/Programs/torbot/
+cd  ~/Programs/torbot
+python3 -m venv ~/Programs/torbot/torbot-venv
+source torbot-venv/bin/activate
+pip3 install -r requirements.txt
+python3 torbot -u https://www.example.com
+deactivate
+echo -e "$VERDE TorBot instalado $RC"
+echo -e "$RC"
+
+
 echo -e "$AZUL3 Instalando ProtOSINT... $RC"
 git clone https://github.com/pixelbubble/ProtOSINT.git ~/Programs/protosint/
+cd  ~/Programs/protosint/
 python3 -m venv ~/Programs/protosint/protosint-venv
-cd ~/Programs/protosint/
 source protosint-venv/bin/activate
+pip3 install -r requirements.txt
 pip3 install requests
 deactivate
 echo -e "$VERDE Instaloader instalado $RC"
@@ -488,10 +567,12 @@ sudo chmod +x /usr/bin/bbot
 sudo chmod +x /usr/bin/cloudfail
 sudo chmod +x /usr/bin/CloudScraper
 sudo chmod +x /usr/bin/EyeWitness
+sudo chmod +x /usr/bin/ghunt
 sudo chmod +x /usr/bin/gitrecon
 sudo chmod +x /usr/bin/hostintel
 sudo chmod +x /usr/bin/infoga
-sudo chmod +x /usr/bin/iocextract
+sudo chmod +x /usr/bin/ivre
+sudo chmod +x /usr/bin/MrHolmes
 sudo chmod +x /usr/bin/pagodo
 sudo chmod +x /usr/bin/photon
 sudo chmod +x /usr/bin/sherlock
@@ -499,6 +580,7 @@ sudo chmod +x /usr/bin/scanless
 sudo chmod +x /usr/bin/startYACY
 sudo chmod +x /usr/bin/stopYACY
 sudo chmod +x /usr/bin/theHarvester
+sudo chmod +x /usr/bin/torbot
 sudo chmod +x /usr/bin/xray
 sudo chmod +x /usr/bin/dnsrecon
 sudo chmod +x /usr/bin/exiftool
@@ -522,6 +604,7 @@ sudo journalctl --vacuum-time=3d
 sudo apt remove -y $(dpkg-query --show 'linux-modules-*' | cut -f1 | grep -v "$(uname -r)")
 sudo find /var/log/ -type f -exec cp /dev/null {} \;
 rm -rf ~/.cache/*
+cat /dev/null > ~/.bash_history
 
 
 echo -e "$AZUL3 A continuación se reiniciará el sistema para aplicar los últimos cambios"

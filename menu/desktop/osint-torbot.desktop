@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=TorBot
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "torbot -h"
+Icon=/home/sherlock/iconos/osint-sherlocklinux.png
+Terminal=true

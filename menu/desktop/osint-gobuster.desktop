@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Go Buster
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "gobuster -h"
+Icon=/home/sherlock/iconos/osint-gobuster.png
+Terminal=true

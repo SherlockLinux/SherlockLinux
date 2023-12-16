@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Ivre
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "ivre -h"
+Icon=/home/sherlock/iconos/osint-ivre.png
+Terminal=true

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /home/sherlock/Programs/Ivre
+source /home/sherlock/Programs/Ivre/Ivre-venv/bin/activate
+ivre "$@"

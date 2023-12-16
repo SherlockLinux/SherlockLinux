@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Mr Holmes
+Categories=X-FOsint;
+Exec=/usr/share/sherlock-menu/exec-in-shell "MrHolmes -h"
+Icon=/home/sherlock/iconos/osint-mrholmes.png
+Terminal=true

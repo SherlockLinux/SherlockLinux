@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=GHunt
+Categories=X-FOsint;
+Exec= /usr/share/sherlock-menu/exec-in-shell "ghunt -h"
+Icon=/home/sherlock/iconos/osint-ghunt.png
+Terminal=true
