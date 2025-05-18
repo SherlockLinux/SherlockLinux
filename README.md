@@ -1,6 +1,6 @@
 ![LogoREADME](https://github.com/SherlockLinux/SherlockLinux/assets/137631572/06261dae-d3d1-4748-9b50-c7f8d07e6338)
 
-[![Python Version](https://img.shields.io/badge/python-3.9+-FF8400)](https://www.python.org) [![License](https://img.shields.io/badge/license-GPLv3-FF8400.svg)](https://github.com/blacklanternsecurity/bbot/blob/dev/LICENSE) [![version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://semver.org)
+[![Python Version](https://img.shields.io/badge/python-3.9+-FF8400)](https://www.python.org) [![License](https://img.shields.io/badge/license-GPLv3-FF8400.svg)](https://github.com/blacklanternsecurity/bbot/blob/dev/LICENSE) [![version](https://img.shields.io/badge/version-3.0.0-green.svg)](https://semver.org)
 
 # Sherlock Linux 
 ### https://www.sherlock-linux.org/
