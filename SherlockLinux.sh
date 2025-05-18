@@ -140,7 +140,7 @@ echo -e "$RC"
 echo -e "$AZUL3 Instalando Tor..."
 echo -e "$COLOROFF"
 cd ~/Programs
-wget -c https://www.torproject.org/dist/torbrowser/13.0.6/tor-browser-linux-x86_64-13.0.6.tar.xz
+wget -c https://www.torproject.org/dist/torbrowser/14.5.1/tor-browser-linux-x86_64-14.5.1.tar.xz
 tar -xvf tor-browser-linux-x86*.tar.xz
 rm -R ~/Programs/tor-browser-linux-x86*.tar.xz
 cd ~/Programs/tor-browser
@@ -332,6 +332,7 @@ cd  ~/Programs/theHarvester
 python3 -m venv ~/Programs/theHarvester/theHarvester-venv
 source theHarvester-venv/bin/activate
 pip3 install -r requirements.txt
+sudo theHarvester
 deactivate
 echo -e "$VERDE theHarvester instalado $RC"
  
@@ -400,13 +401,11 @@ echo -e "$AZUL3 Instalando Infoga... $RC"
 git clone https://github.com/The404Hacking/Infoga.git  ~/Programs/infoga/
 cd  ~/Programs/infoga/
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
-curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
-echo "export PYENV_ROOT=\"$HOME/.pyenv\"" >> -a .bashrc 
-echo "export PATH=\"$PYENV_ROOT/bin:$PATH\"" >> -a .bashrc 
-echo "if command -v pyenv 1>/dev/null 2>&1; then" >> -a .bashrc 
-echo "	eval \"$(pyenv init --path)\"" >> -a .bashrc 
-echo "fi" >> -a .bashrc 
-echo "eval \"$(pyenv virtualenv-init -)\"" >> -a .bashrc 
+curl https://pyenv.run | bash
+echo "export PATH="~/.pyenv/bin:$PATH"" >> -a .bashrc 
+echo "eval "$(pyenv init -)"" >> -a .bashrc 
+echo "eval "$(pyenv virtualenv-init -)"" >> -a .bashrc 
+source ~/.bashrc
 pyenv install 2.7.18
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
 pyenv global 2.7.18
@@ -431,9 +430,9 @@ echo -e "$VERDE GitRecon instalado $RC"
 echo -e "$AZUL3 Instalando ExifTool.. $RC"
 mkdir -p  ~/Programs/ExifTool/
 cd  ~/Programs/ExifTool/
-wget  https://exiftool.org/Image-ExifTool-12.63.tar.gz
-tar xfz Image-ExifTool-12.63.tar.gz
-rm Image-ExifTool-12.63.tar.gz
+wget  https://exiftool.org/Image-ExifTool-13.29.tar.gz
+tar xfz Image-ExifTool-*.tar.gz
+rm Image-ExifTool-*.tar.gz
 echo -e "$VERDE Exiftool instalado $RC"
 
 
@@ -525,7 +524,7 @@ cd  ~/Programs/torbot
 python3 -m venv ~/Programs/torbot/torbot-venv
 source torbot-venv/bin/activate
 pip3 install -r requirements.txt
-python3 torbot -u https://www.example.com
+pip3 install -e .
 deactivate
 echo -e "$VERDE TorBot instalado $RC"
 echo -e "$RC"
